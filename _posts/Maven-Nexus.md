@@ -1,13 +1,12 @@
 title: Maven-Nexus
 ---
 下载Nexus http://nexus.sonatype.org/downloads/。
-## 1.配置nexus 
->首先登录，默认地址http://localhost:8081/nexus/，默认用户名密码为admin/admin123. nexus默认是关闭远程索引下载功能的。开启的方式： 
-点击Administration菜单下面的Repositories，将这三个仓库Apache Snapshots，Codehaus Snapshots，Maven Central 的 Download Remote Indexes修改为true。然后在这三个仓库上分别右键，选择Re-index，这样Nexus就会去下载远程的索引文件。 
-## 2.管理仓库 
-    以管理员用户登陆然后点击左边导航菜单Repositories。下面的Repositories。Nexus提供了三种不同的仓库。 
+## 1.配置nexus
+>首先登录，默认地址http://localhost:8081/nexus/，默认用户名密码为admin/admin123.nexus 默认是关闭远程索引下载功能的。开启的方式： 
+>点击Administration菜单下面的Repositories，将这三个仓库Apache Snapshots，Codehaus Snapshots，Maven Central 的 Download Remote Indexes修改为true。然后在这三个仓库上分别右键，选择Re-index，这样Nexus就会去下载远程的索引文件。 
+## 2.管理仓库    以管理员用户登陆然后点击左边导航菜单Repositories。下面的Repositories。Nexus提供了三种不同的仓库。 
 ### (1) 代理仓库 
-    一个代理仓库是对远程仓库的一个代理。默认情况下，Nexus自带了如下配置的代理仓库： 
+一个代理仓库是对远程仓库的一个代理。默认情况下，Nexus自带了如下配置的代理仓库： 
 >Apache Snapshots 
 这个仓库包含了来自于Apache软件基金会的快照版本。http://people.apache.org/repo/m2-snapshot-repository 
 Codehaus Snapshots 
